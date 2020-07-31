@@ -1,0 +1,13 @@
+POST: https://api.fitbit.com/oauth2/token
+Headers:
+KEY: Authorization ; VALUE: Basic MjJCVFpZOmM3Y2IxMGM1YzhlNzhhYTkxZj########
+KEY: Content-Type  ; VALUE: application/x-www-form-urlencoded
+Params:
+KEY: code          ; VALUE: 44940b08ceca0f7451d3c3139cb########
+KEY: grant_type    ; VALUE: authorization_code
+KEY: redirect_uri  ; VALUE: http://localhost
+/////////////////////////////////////////////////////////////////////////////////////
+GET: https://api.fitbit.com/1/user/-/profile.json
+GET: https://api.fitbit.com//1/user/-/activities/heart/date/2020-07-16/2020-07-17/1min.json
+Headers:
+KEY: Authorization ; VALUE: Bearer eyJhbGciOiJIUzI1NiJ9.F-wcOyG##########
